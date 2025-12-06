@@ -1,0 +1,13 @@
+.git
+.venv
+.continue
+.coverage_cache
+.pytest_cache
+.ruff_cache
+.mypy_cache
+__pycache__
+tests
+README.md
+justfile
+cspell.json
+*.md

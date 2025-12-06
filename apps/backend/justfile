@@ -1,0 +1,26 @@
+# Start the web server in development mode (hot reload)
+dev:
+    uv run fastapi dev src/app/main.py  # Changed from app/main.py
+
+# Run all formatters and linters ("Fix It" button)
+fix:
+    uv run ruff format .
+    uv run ruff check --fix .
+
+# Run all tests
+test:
+    uv run pytest
+
+# Run tests with coverage report
+test-cov:
+    uv run pytest --cov=src/app --cov-report=term-missing --cov-report=html
+
+# Setup the development environment
+setup:
+    uv sync
+    uv run pre-commit install
+
+# Build and preview the Docker image
+preview:
+    docker build -t uv-template .
+    docker run --rm --name uv-app -p 8000:8000 uv-template

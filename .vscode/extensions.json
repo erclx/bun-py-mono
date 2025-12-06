@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    // Shared
+    "streetsidesoftware.code-spell-checker",
+    "tamasfe.even-better-toml",
+
+    // Frontend (React/Bun)
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+
+    // Backend (Python/uv)
+    "ms-python.python",
+    "charliermarsh.ruff",
+    "ms-python.mypy-type-checker"
+  ]
+}

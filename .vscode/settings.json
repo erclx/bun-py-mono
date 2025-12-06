@@ -1,0 +1,30 @@
+{
+  "editor.formatOnSave": true,
+
+  // Frontend (Prettier/ESLint)
+  "[javascript][javascriptreact][typescript][typescriptreact][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // Backend (Python/Ruff)
+  "python.defaultInterpreterPath": "./apps/backend/.venv/bin/python",
+
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "mypy-type-checker.args": ["--config-file=apps/backend/pyproject.toml"],
+  "files.exclude": {
+    "**/.mypy_cache": true,
+    "**/__pycache__": true
+  }
+}
