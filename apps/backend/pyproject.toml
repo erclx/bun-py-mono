@@ -41,6 +41,9 @@ line-ending = "auto"
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
 
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
 # [typing]
 [tool.mypy]
 python_version = "3.14"
