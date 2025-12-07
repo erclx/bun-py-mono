@@ -1,7 +1,8 @@
 {
-  "name": "vite-react-ts-template",
+  "name": "bun-py-frontend",
   "private": true,
   "version": "1.0.0",
+  "description": "React Frontend for Monorepo",
   "type": "module",
   "scripts": {
     "dev": "vite --open",
