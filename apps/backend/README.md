@@ -1,4 +1,4 @@
-# Bun Py Backend
+# Bun-Py Backend
 
 The FastAPI backend service for the `bun-py-mono` monorepo. Pre-configured with `uv`, Ruff, and modern tooling.
 
