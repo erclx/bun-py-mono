@@ -1,7 +1,7 @@
 [project]
-name = "uv-python-template"
+name = "bun-py-backend"
 version = "0.1.0"
-description = "Web-First UV Python Template"
+description = "FastAPI Backend for Monorepo"
 readme = "README.md"
 requires-python = ">=3.14"
 
@@ -59,10 +59,7 @@ pythonpath = ["src"]
 [tool.coverage.run]
 source = ["src/app"]
 branch = true
-omit = [
-    "tests/*",
-    "*/__init__.py",
-]
+omit = ["tests/*", "*/__init__.py"]
 data_file = ".coverage_cache/.coverage"
 
 [tool.coverage.report]
